@@ -33,3 +33,16 @@ local Window = Rayfield:CreateWindow({
    }
 })
 local Tab = Window:CreateTab("Читы", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "Кнопка",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   end,
+})
+local Tab = Window:CreateTab("Анимации",4483362458)
+local Button = Tab:CreateButton({
+   Name = "Booty Animation pack",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/t1hub2/Booty-animation-pack/refs/heads/main/Code.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
